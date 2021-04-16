@@ -26,7 +26,7 @@ Install required packages using the `pip` command. Here are the commands you mus
 
 Also make sure that the chrome webdriver that is matched with your chrome version is in the same working directory of the `main.py` file.
 
-You can get a chrome webdriver from ![HERE](https://chromedriver.chromium.org/).
+You can get a chrome webdriver from [HERE](https://chromedriver.chromium.org/).
 
 It's also very important the name of the webdriver is this: `chromedriver.exe`. It should be that be default but if not change the name.
 
