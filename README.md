@@ -6,6 +6,8 @@
 
 Use at your own risk. I am not responsible for how you use this tool.
 
+This is the very first Blooket hack online I believe and I'm very proud of that. Try not to spread news about this though so Blooket doesn't patch any exploits used here.
+
 Please read the WHOLE file before reporting issues and contacting me.
 
 ## How To Use
