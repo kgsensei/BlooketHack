@@ -1,2 +1,42 @@
-# BlooketHack
- The very first Blooket hack developed.
+# Blooket Hack
+#### The first Blooket hack online.
+### Developed by: kgsensei
+
+![GitHub Tested Platform](https://img.shields.io/static/v1?label=Tested%20On&message=Windows&color=informational&style=for-the-badge)![GitHub Blooket Claim](https://img.shields.io/static/v1?label=First%20Ever&message=Blooket%20Cheat&color=informational&style=for-the-badge)![GitHub Code By](https://img.shields.io/static/v1?label=Code%20By:&message=kgsensei&color=informational&style=for-the-badge)
+
+Use at your own risk. I am not responsible for how you use this tool.
+
+## How To Use
+- 1. To use this cheat you must download the code.
+- 2. Open command prompt and change to working directory.
+- 3. Type `python main.py` to run the hack.
+- 4. Enter the game pin and the name you want to go by.
+- 5. Run and wait. When the program prompts, press enter.
+
+## If There Are Issues
+If there are issues make sure you are running the hack with `Python 3.x`. I use `Python 3.7.7`.
+
+Install required packages using the `pip` command. Here are the commands you must run to install everything required.
+- Python Selenium: `pip install selenium`
+- Python SeleniumWire: `pip install selenium-wire`
+
+Also make sure that the chrome webdriver that is matched with your chrome version is in the same working directory of the `main.py` file.
+
+You can get a chrome webdriver from !(HERE)[https://chromedriver.chromium.org/].
+
+It's also very important the name of the webdriver is this: `chromedriver.exe`. It should be that be default but if not change the name.
+
+## To Report Issues
+If you want to report and issue or get help please open a GitHub issue before doing anything else. Please wait at least 24 hours before contacting me personally.
+
+#### What To Include In My Report
+Please include the following if you are reporting an issue.
+- 1. A detailed description of what happened.
+- 2. A screenshot or copy of the error message.
+- 3. The platform your working on. (ex; Linux)
+- 4. The libraries you have installed (Not always needed).
+- 5. The python version your using or have installed.
+Please try to solve the issues on your own first, it makes you a better problem solver and helps your brain out a lot.
+
+## To Copy:
+Don't copy unless you are actually going to made changes to the project. Give me credit too ofc.
