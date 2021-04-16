@@ -6,6 +6,8 @@
 
 Use at your own risk. I am not responsible for how you use this tool.
 
+Please read the WHOLE file before reporting issues and contacting me.
+
 ## How To Use
 - 1. To use this cheat you must download the code.
 - 2. Open command prompt and change to working directory.
@@ -40,3 +42,8 @@ Please try to solve the issues on your own first, it makes you a better problem 
 
 ## To Copy:
 Don't copy unless you are actually going to made changes to the project. Give me credit too ofc.
+If you want to work together my work email is `ceojeremy@rainydais.com`. Feel free to get in touch.
+
+
+
+###### Hey, this code was developed by kgsensei by the way. This is here just in case someone steals the code and changes the top three lines.
