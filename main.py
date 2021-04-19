@@ -39,6 +39,7 @@ while True:
 					os.system("cls")
 					print("\n\n\nANSWER: "+str(question["correctAnswers"][0])+"\n\n\n")
 		except Exception:
+			os.system("cls")
 			print("\n\n\nSomething Bad Happened... This can happen if your going too fast.\n\n\n")
 	#elif driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/div[1]'):
 	#	#This part is still being worked on. Sorry.
