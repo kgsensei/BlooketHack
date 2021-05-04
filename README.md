@@ -2,7 +2,7 @@
 #### The first Blooket hack online.
 ### Developed by: kgsensei
 
-![GitHub Tested Platform](https://img.shields.io/static/v1?label=Tested%20On&message=Windows&color=informational&style=for-the-badge)![GitHub Blooket Claim](https://img.shields.io/static/v1?label=First%20Ever&message=Blooket%20Cheat&color=informational&style=for-the-badge)![GitHub Code By](https://img.shields.io/static/v1?label=Code%20By:&message=kgsensei&color=informational&style=for-the-badge)
+![GitHub Tested Platform](https://img.shields.io/static/v1?label=Tested%20On&message=Windows&color=informational&style=for-the-badge)![GitHub Code By](https://img.shields.io/static/v1?label=Code%20By:&message=kgsensei&color=informational&style=for-the-badge)
 
 Use at your own risk. I am not responsible for how you use this tool.
 
