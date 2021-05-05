@@ -41,13 +41,16 @@ while True:
 		except Exception:
 			os.system("cls")
 			print("\n\n\nSomething Bad Happened... This can happen if your going too fast.\n\n\n")
-	#elif driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/div[1]'):
-	#	#This part is still being worked on. Sorry.
-	#    -------------------------------------------
-	#	driver.execute_script("var block_to_insert;")
-	#	driver.execute_script("var container_block;")
-	#	driver.execute_script("block_to_insert=document.createElement('style');")
-	#	driver.execute_script("block_to_insert.innerHTML='/*.styles__chest___3wN6v-camelCase{visibility:hidden;display:none;} .styles__choiceImage___f1EwF-camelCase{visibility:visible;display:block;}*/';")
-	#	driver.execute_script("container_block=document.getElementById('app');")
-	#	driver.execute_script("container_block.appendChild(block_to_insert);")
-	time.sleep(0.5)
+	elif driver.find_elements_by_xpath('//*[@id="left"]/div/div[1]/div'):
+		try:
+			questionShown=driver.find_elements_by_xpath('//*[@id="left"]/div/div[1]/div')
+			questionShown=questionShown[0].get_attribute("textContent")
+			print(questionShown)
+			for question in jsondata['questions']:
+				if str(question["question"])==questionShown:
+					os.system("cls")
+					print("\n\n\nANSWER: "+str(question["correctAnswers"][0])+"\n\n\n")
+		except Exception as exep:
+			os.system("cls")
+			print("\n\n\nAn unknown error occured: "+str(exep)+"\n\n\n")
+	time.sleep(0.25)
