@@ -14,12 +14,12 @@ Please read the WHOLE file before reporting issues and contacting me.
 Gives free correct answers to the current question in the console.
 - 100% Free & Open Source
 - Works on most game modes:
-- a. Gold Quest
-- b. Tower Defense
-- c. Café
-- d. Factory
-- e. Racing
-- f. Classic
+- - Gold Quest
+- - Tower Defense
+- - Café
+- - Factory
+- - Racing
+- - Classic
 - Easy to use
 - Undetectable (So Far)
 
