@@ -10,6 +10,19 @@ This is the very first Blooket hack online I believe and I'm very proud of that.
 
 Please read the WHOLE file before reporting issues and contacting me.
 
+## Features:
+Gives free correct answers to the current question in the console.
+- 100% Free & Open Source
+- Works on most game modes:
+- - Gold Quest
+- - Tower Defense
+- - Café
+- - Factory
+- - Racing
+- - Classic
+- Easy to use
+- Undetectable (So Far)
+
 ## How To Use
 - 1. To use this cheat you must download the code.
 - 2. Open command prompt and change to working directory.
