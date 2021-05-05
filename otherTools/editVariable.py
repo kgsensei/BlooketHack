@@ -16,5 +16,5 @@ while True:
                }
           }
      dead=str(data)
-     r=requests.put('https://www.blooket.com/api/firebase/setval',headers=dead)
+     r=requests.put('https://api.blooket.com/api/firebase/setval',headers=dead)
      print(r.text)
