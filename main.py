@@ -45,12 +45,22 @@ while True:
 		try:
 			questionShown=driver.find_elements_by_xpath('//*[@id="left"]/div/div[1]/div')
 			questionShown=questionShown[0].get_attribute("textContent")
-			print(questionShown)
 			for question in jsondata['questions']:
 				if str(question["question"])==questionShown:
 					os.system("cls")
 					print("\n\n\nANSWER: "+str(question["correctAnswers"][0])+"\n\n\n")
-		except Exception as exep:
+		except Exception:
 			os.system("cls")
-			print("\n\n\nAn unknown error occured: "+str(exep)+"\n\n\n")
+			print("\n\n\nSomething Bad Happened... This can happen if your going too fast.\n\n\n")
+	elif driver.find_elements_by_xpath('//*[@id="body"]/div[3]/div/div[1]/div'):
+		try:
+			questionShown=driver.find_elements_by_xpath('//*[@id="body"]/div[3]/div/div[1]/div')
+			questionShown=questionShown[0].get_attribute("textContent")
+			for question in jsondata['questions']:
+				if str(question["question"])==questionShown:
+					os.system("cls")
+					print("\n\n\nANSWER: "+str(question["correctAnswers"][0])+"\n\n\n")
+		except Exception:
+			os.system("cls")
+			print("\n\n\nSomething Bad Happened... This can happen if your going too fast.\n\n\n")
 	time.sleep(0.25)
