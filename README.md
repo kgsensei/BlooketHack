@@ -23,6 +23,8 @@ Gives free correct answers to the current question in the console.
 - Easy to use
 - Undetectable (So Far)
 
+If any features or game modes are requested, I will try to add them within a day or two.
+
 ## How To Use
 - 1. To use this cheat you must download the code.
 - 2. Open command prompt and change to working directory.
