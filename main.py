@@ -1,6 +1,18 @@
-from selenium.webdriver.common.keys import Keys
-from seleniumwire import webdriver
-import time, os, json
+try:
+	from selenium.webdriver.common.keys import Keys
+	from seleniumwire import webdriver
+	import time,os,json
+except Exception:
+	import os,time
+	print("="*32)
+	print("Installing required packages...")
+	print("="*32)
+	os.system("pip install selenium")
+	os.system("pip install selenium-wire")
+finally:
+	from selenium.webdriver.common.keys import Keys
+	from seleniumwire import webdriver
+	import time, os, json
 
 gamePin=input("Game Pin: ")
 gameName=input("Game Name: ")
