@@ -24,6 +24,7 @@ Gives free correct answers to the current question in the console.
 - Undetectable (So Far)
 
 If any features or game modes are requested, I will try to add them within a day or two.
+Please put suggestions in my [Discord Server](https://discord.gg/tPPwXqhutJ).
 
 ## How To Use
 - 1. To use this cheat you must download the code.
