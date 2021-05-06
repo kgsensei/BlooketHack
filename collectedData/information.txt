@@ -166,3 +166,20 @@ pics=[
     "Pancakes",
     "French Toast"
 ]
+
+
+=========================================================================
+                    Patching API Issues
+=========================================================================
+put("/api/users/goldstats",
+     {
+          name:e,
+          place:this.stats.place,
+          gold:this.stats.gold,
+          playersDefeated:this.stats.playersDefeated,
+          correctAnswers:this.stats.correctAnswers,
+          blookUsed:this.stats.blookUsed,
+          nameUsed:this.stats.nameUsed,
+          contest:this.stats.contest
+     }
+)
