@@ -12,7 +12,7 @@ except Exception:
 finally:
 	from selenium.webdriver.common.keys import Keys
 	from seleniumwire import webdriver
-	import time, os, json
+	import time,os,json
 
 gamePin=input("Game Pin: ")
 gameName=input("Game Name: ")
