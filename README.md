@@ -8,6 +8,8 @@ Use at your own risk. I am not responsible for how you use this tool.
 
 This is the very first Blooket hack online I believe and I'm very proud of that. Try not to spread news about this though so Blooket doesn't patch any exploits used here.
 
+I will NOT be fixing the `editVariable.py` file, I'm sorry.
+
 Please read the WHOLE file before reporting issues and contacting me.
 
 ## Features:
@@ -15,7 +17,7 @@ Gives free correct answers to the current question in the console.
 - 100% Free & Open Source
 - Works on most game modes:
 - - Gold Quest          (Tested - Working)
-- - Tower Defense       (Tested - Working)
+- - Tower Defense       (Tested - Fixing)
 - - Café                (Tested - Working)
 - - Factory             (Tested - Working)
 - - Racing              (Tested - Working)
@@ -23,7 +25,7 @@ Gives free correct answers to the current question in the console.
 - Easy to use
 - Undetectable (So Far)
 
-If any features or game modes are requested, I will try to add them within a day or two.
+If any features or game modes are requested, I will try to add them.
 Please put suggestions in my [Discord Server](https://discord.gg/tPPwXqhutJ).
 
 ## How To Use
