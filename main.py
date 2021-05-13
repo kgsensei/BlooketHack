@@ -38,6 +38,8 @@ if sys.platform=="win32" or sys.platform=="cygwin":
 	platform="windows"
 elif sys.platform=="linux":
 	platform="linux"
+elif sys.platform=="darwin":
+	platform="darwin"
 else:
 	print(color.RED+"Error: Your OS doesn't support Blooket Hack.")
 	time.sleep(10)
@@ -46,7 +48,7 @@ else:
 def clear():
 	if platform=="windows":
 		os.system("cls")
-	elif platform=="linux":
+	elif platform=="linux" or platform=="darwin":
 		os.system("clear")
 	else:
 		print(color.RED+"Error: Your OS doesn't support Blooket Hack.")
