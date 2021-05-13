@@ -36,7 +36,7 @@ Please put suggestions in my [Discord Server](https://discord.gg/tPPwXqhutJ).
 - 4. Finally, just double click the `main.py` file.
 
 ## If There Are Issues
-If there are issues make sure you are running the hack with `Python 3.x`. I use `Python 3.7.7`.
+If there are issues make sure you are running the hack with `Python 3.7`. Most python copies should work but are not tested.
 
 Install required packages using the `pip` command, they should autoinstall but just in case.
 - Python Selenium: `pip install selenium`
