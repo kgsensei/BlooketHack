@@ -44,9 +44,7 @@ Install required packages using the `pip` command, they should autoinstall but j
 - Python Colorama: `pip install colorama`
 
 Make sure that the chrome webdriver is matched with your chrome version and is in the same directory of the `main.py` file.
-
 You can get a chrome webdriver from [HERE](https://chromedriver.chromium.org/).
-
 It's also very important the name of the webdriver is this: `chromedriver.exe`. It should be that be default but if not change the name.
 
 ## To Report Issues
