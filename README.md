@@ -24,6 +24,8 @@ Gives free correct answers to the current question in the console.
 - User Friendly
 - Undetectable (So Far)
 
+#### I'm working on a fix to the `editVariable.py` file.
+
 If any features or game modes are requested, I will try to add them.
 Please put suggestions in my [Discord Server](https://discord.gg/tPPwXqhutJ).
 
