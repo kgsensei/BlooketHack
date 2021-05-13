@@ -36,19 +36,13 @@ class color:
 platform=None
 if sys.platform=="win32" or sys.platform=="cygwin":
 	platform="windows"
-elif sys.platform=="linux":
-	platform="linux"
-elif sys.platform=="darwin":
-	platform="darwin"
 else:
-	print(color.RED+"Error: Your OS doesn't support Blooket Hack.")
-	time.sleep(10)
-	os._exit(0)
+	platform="other"
 
 def clear():
 	if platform=="windows":
 		os.system("cls")
-	elif platform=="linux" or platform=="darwin":
+	elif platform=="other":
 		os.system("clear")
 	else:
 		print(color.RED+"Error: Your OS doesn't support Blooket Hack.")
@@ -84,6 +78,8 @@ if os.path.isfile(r'C:\Program Files\Google\Chrome\Application\chrome.exe'):
 	options.binary_location=r'C:\Program Files\Google\Chrome\Application\chrome.exe'
 elif os.path.isfile(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'):
 	options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+elif os.path.isfile(r'/Applications/Google Chrome.app'):
+	options.binary_location=r'/Applications/Google Chrome.app'
 else:
 	print(color.RED+"Error: Blooket Hack Requires Chrome To Be Installed.")
 	time.sleep(10)
