@@ -1,11 +1,11 @@
-#Script to kick all players from Blooket
-#Original Code: iCrazeiOS; Modifyed By: kgsensei
+# Copyright (c) 2021 kgsensei. All rights reserved.
+
 try:
-  import requests,json
+	import requests,json
 except Exception:
-  import os
-  os.system("pip install requests")
-  import requests,json
+	import os
+	os.system("pip install requests")
+	import requests,json
 
 gamePin=str(input("Game pin: "))
 r=requests.put("https://api.blooket.com/api/firebase/join",data={"id":gamePin,"name":"blooketbad"},headers={"Referer":"https://www.blooket.com/"})
