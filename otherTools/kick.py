@@ -1,5 +1,5 @@
-#Script to kick player from Blooket
-#Original Code: iCrazeiOS; Modifyed By: kgsensei
+# Copyright (c) 2021 kgsensei. All rights reserved.
+
 try:
   import requests
 except Exception:
