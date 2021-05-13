@@ -1,11 +1,11 @@
-# Original code by: kgsensei
-# Copyright (c) 2021 kgsensei. All rights reserved.
+#Script to kick player from Blooket
+#Original Code: iCrazeiOS; Modifyed By: kgsensei
 try:
-     import requests
+  import requests
 except Exception:
-     import os
-     os.system("pip install requests")
-     import requests
+  import os
+  os.system("pip install requests")
+  import requests
 
 gamePin=str(input("Game pin: "))
 name=str(input("Name to kick: "))
