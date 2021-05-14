@@ -78,7 +78,7 @@ if os.path.isfile(r'C:\Program Files\Google\Chrome\Application\chrome.exe'):
 	options.binary_location=r'C:\Program Files\Google\Chrome\Application\chrome.exe'
 elif os.path.isfile(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'):
 	options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
-elif os.path.isfile(r'/Applications/Google Chrome.app'):
+elif sys.platform=="darwin":
 	options.binary_location=r'/Applications/Google Chrome.app'
 else:
 	print(color.RED+"Error: Blooket Hack Requires Chrome To Be Installed.")
