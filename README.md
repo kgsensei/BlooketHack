@@ -24,6 +24,11 @@ Gives free correct answers to the current question in the console.
 - User Friendly
 - Undetectable (So Far)
 
+### Other Tools:
+- Kick a player from the game
+- Kick all players from a game
+- Flood the game with bots (Thanks to Copycat)
+
 #### I'm working on a fix to the `editVariable.py` file.
 
 If any features or game modes are requested, I will try to add them.
