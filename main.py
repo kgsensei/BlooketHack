@@ -85,7 +85,10 @@ else:
 	time.sleep(10)
 	os._exit(0)
 
-driver=webdriver.Chrome(options=options,executable_path=webdriver_location)
+if sys.platform=="darwin":
+	driver=webdriver.Chrome(executable_path="C:\\chromedriver.exe")
+else:
+	driver=webdriver.Chrome(options=options,executable_path=webdriver_location)
 
 questionList=[]
 
