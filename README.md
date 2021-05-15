@@ -27,7 +27,7 @@ Gives free correct answers to the current question in the console.
 ### Other Tools:
 - Kick a player from the game
 - Kick all players from a game
-- Flood the game with bots (Thanks to Copycat)
+- Flood the game with bots
 
 #### I'm working on a fix to the `editVariable.py` file.
 
@@ -51,6 +51,10 @@ Install required packages using the `pip` command, they should autoinstall but j
 Make sure that the chrome webdriver is matched with your chrome version and is in the same directory of the `main.py` file.
 You can get a chrome webdriver from [HERE](https://chromedriver.chromium.org/).
 It's also very important the name of the webdriver is this: `chromedriver.exe`. It should be that be default but if not change the name.
+
+## Helpers And Fellow Coders
+- Copycat {Copycat#8110}
+- DaAwesomeGuy {DaAwesomeGuy#9831}
 
 ## To Report Issues
 If you want to report and issue or get help you can open a GitHub issue or join my discord server: [HERE](https://discord.gg/tPPwXqhutJ).
