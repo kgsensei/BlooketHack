@@ -1,6 +1,6 @@
 # Blooket Hack   v2
 #### The first Blooket hack online.
-### Developed by: kgsensei
+### Developed by: kgsensei [R0AĎ#3435]
 
 ![GitHub Tested Platform](https://img.shields.io/static/v1?label=Tested%20On&message=Windows&color=informational&style=for-the-badge)![GitHub Code By](https://img.shields.io/static/v1?label=Code%20By:&message=kgsensei&color=informational&style=for-the-badge)
 
