@@ -32,7 +32,7 @@ Gives free correct answers to the current question in the console.
 #### I'm working on a fix to the `editVariable.py` file.
 
 If any features or game modes are requested, I will try to add them.
-Please put suggestions in my [Discord Server](https://discord.gg/tPPwXqhutJ).
+Please put suggestions in my [Discord Server](https://discord.gg/s3QhtYJ5qH).
 
 ## How To Use
 - 1. First you must download python 3.7, you can do that from [This Link](https://www.python.org/downloads/release/python-377/).
@@ -57,7 +57,7 @@ It's also very important the name of the webdriver is this: `chromedriver.exe`. 
 - DaAwesomeGuy {DaAwesomeGuy#9831}
 
 ## To Report Issues
-If you want to report and issue or get help you can open a GitHub issue or join my discord server: [HERE](https://discord.gg/tPPwXqhutJ).
+If you want to report and issue or get help you can open a GitHub issue or join my discord server: [HERE](https://discord.gg/s3QhtYJ5qH).
 
 #### What To Include In My Report
 Please include the following if you are reporting an issue.
