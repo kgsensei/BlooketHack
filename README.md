@@ -53,7 +53,7 @@ You can get a chrome webdriver from [HERE](https://chromedriver.chromium.org/).
 It's also very important the name of the webdriver is this: `chromedriver.exe`. It should be that be default but if not change the name.
 
 ## Helpers And Fellow Coders
-- Copycat {Copycat#8110}
+- Copycat {Copycat#8110} {https://github.com/Copycat8110}
 - DaAwesomeGuy {DaAwesomeGuy#9831}
 
 ## To Report Issues
