@@ -1,6 +1,6 @@
 # Blooket Hack   v2
 #### The first Blooket hack online.
-### Developed by: kgsensei [R0AĎ#3435]
+### Developed by: kgsensei
 
 ![GitHub Tested Platform](https://img.shields.io/static/v1?label=Tested%20On&message=Windows&color=informational&style=for-the-badge)![GitHub Code By](https://img.shields.io/static/v1?label=Code%20By:&message=kgsensei&color=informational&style=for-the-badge)
 
@@ -68,6 +68,6 @@ Please include the following if you are reporting an issue.
 
 ## To Copy:
 Don't copy unless you are actually going to made changes to the project. Give me credit too ofc.
-If you want to work together my work email is `ceojeremy@rainydais.com`.
+If you want to work together my work email is `ceojeremy@rainydais.com`, My discord is R0AĎ#3435.
 
 #### Copyright (c) 2021 kgsensei. All rights reserved.
