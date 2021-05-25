@@ -68,6 +68,6 @@ Please include the following if you are reporting an issue.
 
 ## To Copy:
 Don't copy unless you are actually going to made changes to the project. Give me credit too ofc.
-If you want to work together my work email is `ceojeremy@rainydais.com`, My discord is R0AĎ#3435.
+If you want to work together my work email is `ceojeremy@rainydais.com`, My discord is `R0AĎ#3435`.
 
 #### Copyright (c) 2021 kgsensei. All rights reserved.
