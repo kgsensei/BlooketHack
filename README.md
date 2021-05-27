@@ -25,7 +25,7 @@ Gives free correct answers to the current question in the console.
 - Undetectable (Mostly)
 
 - Working on force win feature \[Got Patched\]
-- Working on token exploit  \[Got Patched\]
+- Working on token exploit \[Got Patched\]
 
 ### Other Tools:
 - Kick a player from the game
