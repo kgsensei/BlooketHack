@@ -4,7 +4,7 @@
 
 ![GitHub Tested Platform](https://img.shields.io/static/v1?label=Tested%20On&message=Windows&color=informational&style=for-the-badge)![GitHub Code By](https://img.shields.io/static/v1?label=Code%20By:&message=kgsensei&color=informational&style=for-the-badge)
 
-Use at your own risk. I am not responsible for how you use this tool.
+Use at your own risk, accounts have been banned for using this. I am not responsible for how you use this tool.
 
 This is the very first Blooket hack online I believe and I'm very proud of that. Try not to spread news about this though so Blooket doesn't patch any exploits used here.
 
@@ -19,19 +19,19 @@ Gives free correct answers to the current question in the console.
 - - Café                (Tested - Working)
 - - Factory             (Tested - Working)
 - - Racing              (Tested - Working)
-- - Classic             (Untested - TBD)
+- - Classic             (Tested - Working)
 - Easy to use
 - User Friendly
-- Undetectable (So Far)
+- Undetectable (Mostly)
+
+- Working on force win feature \[Got Patched\]
+- Working on token exploit  \[Got Patched\]
 
 ### Other Tools:
 - Kick a player from the game
 - Kick all players from a game
 - Flood the game with bots
 
-#### I'm working on a fix to the `editVariable.py` file.
-
-If any features or game modes are requested, I will try to add them.
 Please put suggestions in my [Discord Server](https://discord.gg/s3QhtYJ5qH).
 
 ## How To Use
@@ -55,6 +55,7 @@ It's also very important the name of the webdriver is this: `chromedriver.exe`. 
 ## Helpers And Fellow Coders
 - Copycat { Copycat#8110 } { https://github.com/Copycat8110 }
 - DaAwesomeGuy { DaAwesomeGuy#9831 }
+- Glizzy { glizzz_y#0777 } { https://github.com/glixzzy }
 
 ## To Report Issues
 If you want to report and issue or get help you can open a GitHub issue or join my discord server: [HERE](https://discord.gg/s3QhtYJ5qH).
