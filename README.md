@@ -1,8 +1,12 @@
 # Blooket Hack   v3 {Kinda}
 #### The first Blooket hack online.
-### Developed by: kgsensei
+### Original code by: kgsensei
 
-![GitHub Tested Platform](https://img.shields.io/static/v1?label=Tested%20On&message=Windows&color=informational&style=for-the-badge)![GitHub Code By](https://img.shields.io/static/v1?label=Code%20By:&message=kgsensei&color=informational&style=for-the-badge)
+![GitHub Tested Platform](https://img.shields.io/static/v1?label=Tested%20On&message=Windows&color=informational&style=for-the-badge)![GitHub Code By](https://img.shields.io/static/v1?label=Code%20By:&message=kgsensei%20and%20TheFinalWillow&color=informational&style=for-the-badge)
+## Development news
+Hello everyone. kgsensei has dropped development on this project. The new developer is Adam Tschan/TheFinalWillow. Join the discord below if you have questions.
+
+##
 
 Use at your own risk, accounts have been banned for using this. I am not responsible for how you use this tool.
 
@@ -32,7 +36,7 @@ Gives free correct answers to the current question in the console.
 - Kick all players from a game
 - Flood the game with bots
 
-Please put suggestions in my [Discord Server](https://discord.gg/s3QhtYJ5qH).
+Please put suggestions in kgsensei's [Discord Server](https://discord.gg/s3QhtYJ5qH).
 
 ## How To Use
 - 1. First you must download python 3.7, you can do that from [This Link](https://www.python.org/downloads/release/python-377/).
@@ -58,7 +62,7 @@ It's also very important the name of the webdriver is this: `chromedriver.exe`. 
 - Glizzy { glizzz_y#0777 } { https://github.com/glixzzy }
 
 ## To Report Issues
-If you want to report and issue or get help you can open a GitHub issue or join my discord server: [HERE](https://discord.gg/s3QhtYJ5qH).
+If you want to report and issue or get help you can open a GitHub issue or join kgsensei's discord server: [HERE](https://discord.gg/s3QhtYJ5qH).
 
 #### What To Include In My Report
 Please include the following if you are reporting an issue.
@@ -69,6 +73,6 @@ Please include the following if you are reporting an issue.
 
 ## To Copy:
 Don't copy unless you are actually going to made changes to the project. Give me credit too ofc.
-If you want to work together my work email is `ceojeremy@rainydais.com`, My discord is `R0AĎ#3435`.
+If you want to work together join the discord and shoot me a dm. Thank you.
 
-#### Copyright (c) 2021 kgsensei. All rights reserved.
+#### Copyright (c) 2021 kgsensei and TheFinalWillow. All rights reserved.
