@@ -1,4 +1,4 @@
-# Blooket Hack   v2
+# Blooket Hack   v3 {Kinda}
 #### The first Blooket hack online.
 ### Developed by: kgsensei
 
