@@ -1,4 +1,5 @@
-# Blooket Hack   v3 {Kinda}
+# Pretty much all development has moved to [GitLab] https://gitlab.com/tschanadam/BlooketHack
+#### Blooket Hack   v3 {Kinda}
 #### The first Blooket hack online.
 ### Original code by: kgsensei
 
