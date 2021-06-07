@@ -1,4 +1,4 @@
-## The First Blooket Hack Online
+## One Of The First Blooket Hacks Online
 ### Original code by: kgsensei
 
 ## Development News
