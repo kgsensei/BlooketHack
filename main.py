@@ -10,14 +10,9 @@ try:
 except Exception:
  import os
  print(("="*32)+"\nInstalling required packages...\n"+("="*32))
- try:
-  os.system("pip install selenium")
-  os.system("pip install selenium-wire")
-  os.system("pip install colorama")
- except Exception:
-  os.system("pip3 install selenium")
-  os.system("pip3 install selenium-wire")
-  os.system("pip3 install colorama")
+ os.system("pip install selenium")
+ os.system("pip install colorama")
+ os.system("pip install selenium-wire")
 finally:
  from colorama import init, Fore, Back, Style
  from selenium.webdriver.common.keys import Keys
