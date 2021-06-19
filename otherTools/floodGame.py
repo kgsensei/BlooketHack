@@ -1,6 +1,9 @@
 # Original code by kgsensei
 # Code modified by Copycat#8110
 
+input("This code doesn't work anymore. Sorry.\nThe code for it is still in this file if you want to modify it.\nPress enter to exit.")
+exit()
+
 try:
     import requests,json
 except Exception:

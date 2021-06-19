@@ -1,5 +1,8 @@
 # Copyright (c) 2021 kgsensei. All rights reserved.
 
+input("This code doesn't work anymore. Sorry.\nThe code for it is still in this file if you want to modify it.\nPress enter to exit.")
+exit()
+
 try:
 	import requests,json
 except Exception:
