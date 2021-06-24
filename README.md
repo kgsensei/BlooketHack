@@ -5,8 +5,6 @@
 Hello everyone. kgsensei has dropped development on this project. The new developer is Adam Tschan/TheFinalWillow. Join the discord below if you have questions.
 Pretty much all development has moved to [GitLab](https://gitlab.com/tschanadam/BlooketHack). [Discord Server](https://discord.gg/s3QhtYJ5qH) for questions.
 
-The last release was just added to the releases tab. Go there for a full history of the legacy code as that code won't be here that much longer probably: [Releases](https://github.com/kgsensei/BlooketHack/releases).
-
 ## Features:
 Gives free correct answers to the current question in the console.
 - 100% Free & Open Source
