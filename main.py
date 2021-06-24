@@ -116,7 +116,7 @@ for question in jsondata['questions']:
   questionList.append(question["question"])
 
 if checkDouble(questionList):
-  print(color.RED+"Error: There are multiple questions with the same content, because of the way this cheat works that means it will not be able to answer those questions.\nFor example: The \"Flags of the World\" set, because every question says \"What flag is this?\".)
+  print(color.RED+"Error: There are multiple questions with the same content, because of the way this cheat works that means it will not be able to answer those questions.\nFor example: The \"Flags of the World\" set, because every question says \"What flag is this?\".")
   input(color.RED+"Press \'Enter\' to run the cheat anyway.")
 
 clear()
