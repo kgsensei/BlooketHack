@@ -10,8 +10,9 @@ try:
 except Exception:
   import os
   print(("="*32)+"\nInstalling required packages...\n"+("="*32))
+  os.system("py -m pip install --upgrade pip")
   os.system("py -m pip install selenium")
-  os.system("py -m pip install colorama")
+  os.system("py -m pip install \"colorama==0.4.3\"")
   os.system("py -m pip install selenium-wire")
 finally:
   from colorama import init, Fore, Back, Style
@@ -74,7 +75,7 @@ elif os.path.isfile(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.ex
 elif sys.platform=="darwin":
   options.binary_location=r'/Applications/Google Chrome.app'
 else:
-  print(color.RED+"Error: Blooket Hack Requires Chrome To Be Installed.")
+  print(color.RED+"Error: This cheat requires chrome to be installed.")
   time.sleep(10)
   os._exit(0)
 
@@ -115,8 +116,8 @@ for question in jsondata['questions']:
   questionList.append(question["question"])
 
 if checkDouble(questionList):
-  print(color.RED+"Error: Multiple questions with same content detected. I will not be able to answer these questions.")
-  input(color.YELLOW+"Press \'Enter\' to Proceed.")
+  print(color.RED+"Error: There are multiple questions with the same content, because of the way this cheat works that means it will not be able to answer those questions.\nFor example: The \"Flags of the World\" set, because every question says \"What flag is this?\".)
+  input(color.RED+"Press \'Enter\' to run the cheat anyway.")
 
 clear()
 
