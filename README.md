@@ -9,26 +9,26 @@ Pretty much all development has moved to [GitLab](https://gitlab.com/tschanadam/
 Gives free correct answers to the current question in the console.
 - 100% Free & Open Source
 - Works on most game modes:
-- - Gold Quest          (Tested - Working)
-- - Tower Defense       (Tested - Fixing)
-- - Café                (Tested - Working)
-- - Factory             (Tested - Working)
-- - Racing              (Tested - Working)
-- - Classic             (Tested - Working)
-- - Crypto              (Patched - Broken)
+  - Gold Quest          (Tested - Working)
+  - Tower Defense       (Tested - Fixing)
+  - Café                (Tested - Working)
+  - Factory             (Tested - Working)
+  - Racing              (Tested - Working)
+  - Classic             (Tested - Working)
+  - Crypto              (Patched - Broken)
 - User Friendly
 - Undetectable (Mostly)
 
 ## How To Use
 - First you must download python 3.7, you can do that from [This Link](https://www.python.org/downloads/release/python-377/).
-- - On install you do need to check "Add to path".
+  - On install you do need to check "Add to path".
 - Second you must download the code here on GitHub.
 - Third you need to extract the files from the `.zip` you downloaded.
 - Finally, just double click the `main.py` file.
-- - If it still doesn't work run these commands in command prompt: (Then run `main.py` again.)
-- - - `py -m pip install selenium`
-- - - `py -m pip install selenium-wire`
-- - - `py -m pip install colorama`
+  - If it still doesn't work run these commands in command prompt: (Then run `main.py` again.)
+   - `py -m pip install selenium`
+   - `py -m pip install selenium-wire`
+   - `py -m pip install colorama`
 
 ## Helpers And Fellow Coders
 - Copycat { Copycat#8110 } { https://github.com/Copycat8110 }
