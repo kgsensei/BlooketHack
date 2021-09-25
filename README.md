@@ -15,13 +15,13 @@ This Blooket Hack is meant to be the most powerful and useful cheat online, and 
 - ~100% Guarantee Correct Answer
 - 100% Free & Open Source
 - Works on most game modes:
-  - Gold Quest          (Tested - Working)
-  - Tower Defense       (Tested - Working)
-  - Café                (Tested - Working)
-  - Factory             (Tested - Working)
-  - Racing              (Tested - Working)
-  - Classic             (Tested - Working)
-  - Crypto              (Tested - Working)
+  - <pre>Gold Quest          (Tested - Working)</pre>
+  - <pre>Tower Defense       (Tested - Working)</pre>
+  - <pre>Café                (Tested - Working)</pre>
+  - <pre>Factory             (Tested - Working)</pre>
+  - <pre>Racing              (Tested - Working)</pre>
+  - <pre>Classic             (Tested - Working)</pre>
+  - <pre>Crypto              (Tested - Working)</pre>
 - User Friendly (Mostly)
 - Undetectable
 
@@ -45,11 +45,11 @@ If there is an issue not shown here, please feel free to join my [Discord server
 #### Known bugs:
 
 - Failure to show correct answer with duplicate text-based questions.
- - Cannot use this cheat on sets like "Flags of the World".
+  - Cannot use this cheat on sets like "Flags of the World".
 - Colorama dependency install issue on Linux.
- - This is a Colorama issue, I don't think I can help. :(
+  - This is a Colorama issue, I don't think I can help. :(
 - Chrome-driver fails to start.
- - This could be caused by a system administrator blocking unknown executable files/applications from running, in which case I highly recommend using glixzzy's cheat instead. Though it may require some JS console experience. [Link Here](https://github.com/glixzzy/blooket-hack).
+  - This could be caused by a system administrator blocking unknown executable files/applications from running, in which case I highly recommend using glixzzy's cheat instead. Though it may require some JS console experience. [Link Here](https://github.com/glixzzy/blooket-hack).
 
 ## Patch Notes:
 
@@ -61,7 +61,7 @@ If there is an issue not shown here, please feel free to join my [Discord server
 - Modified readme.md file to something more current.
 - Commented sections of the Blooket Hack script.
 - Updated indentation on the Blooket Hack script.
- - Indentations off by three characters for some reason.
+  - Indentations off by three characters for some reason.
 - Removed TheFinalWillow from production.
 
 ## Contributors + Thanks To:
