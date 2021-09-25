@@ -15,13 +15,13 @@ This Blooket Hack is meant to be the most powerful and useful cheat online, and 
 - ~100% Guarantee Correct Answer
 - 100% Free & Open Source
 - Works on most game modes:
-  - <pre>Gold Quest          (Tested - Working)</pre>
-  - <pre>Tower Defense       (Tested - Working)</pre>
-  - <pre>Café                (Tested - Working)</pre>
-  - <pre>Factory             (Tested - Working)</pre>
-  - <pre>Racing              (Tested - Working)</pre>
-  - <pre>Classic             (Tested - Working)</pre>
-  - <pre>Crypto              (Tested - Working)</pre>
+  - Gold Quest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Tested - Working)
+  - Tower Defense&nbsp;&nbsp;&nbsp;(Tested - Working)
+  - Café&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Tested - Working)
+  - Factory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Tested - Working)
+  - Racing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Tested - Working)
+  - Classic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Tested - Working)
+  - Crypto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Tested - Working)
 - User Friendly (Mostly)
 - Undetectable
 
