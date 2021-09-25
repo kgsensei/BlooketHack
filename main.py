@@ -1,58 +1,60 @@
 # Copyright (c) 2021 kgsensei. All rights reserved.
 try:
-  from colorama import init, Fore, Back, Style
-  from selenium.webdriver.common.keys import Keys
-  from seleniumwire import webdriver
-  import time
-  import os
-  import json
-  import sys
+	from colorama import init, Fore, Back, Style
+	from selenium.webdriver.common.keys import Keys
+	from seleniumwire import webdriver
+	from selenium.common.exceptions import NoSuchElementException
+	import time
+	import os
+	import json
+	import sys
 except Exception:
-  import os
-  print(("="*32)+"\nInstalling required packages...\n"+("="*32))
-  os.system("py -m pip install --upgrade pip")
-  os.system("py -m pip install selenium")
-  os.system("py -m pip install \"colorama==0.4.3\"")
-  os.system("py -m pip install selenium-wire")
+	import os
+	print(("="*32)+"\nInstalling required packages...\n"+("="*32))
+	os.system("py -m pip install --upgrade pip")
+	os.system("py -m pip install selenium")
+	os.system("py -m pip install \"colorama==0.4.3\"")
+	os.system("py -m pip install selenium-wire")
 finally:
-  from colorama import init, Fore, Back, Style
-  from selenium.webdriver.common.keys import Keys
-  from seleniumwire import webdriver
-  import time
-  import os
-  import json
-  import sys
+	from colorama import init, Fore, Back, Style
+	from selenium.webdriver.common.keys import Keys
+	from seleniumwire import webdriver
+	from selenium.common.exceptions import NoSuchElementException
+	import time
+	import os
+	import json
+	import sys
 
 init(autoreset=True)
 
 class color:
-  PURPLE='\033[95m'
-  CYAN='\033[96m'
-  BLUE='\033[94m'
-  GREEN='\033[92m'
-  YELLOW='\033[93m'
-  RED='\033[91m'
-  BOLD='\033[1m'
-  END='\033[0m'
+	PURPLE='\033[95m'
+	CYAN='\033[96m'
+	BLUE='\033[94m'
+	GREEN='\033[92m'
+	YELLOW='\033[93m'
+	RED='\033[91m'
+	BOLD='\033[1m'
+	END='\033[0m'
 
 platform=None
 if sys.platform=="win32" or sys.platform=="cygwin":
-  platform="windows"
+	platform="windows"
 else:
-  platform="other"
+	platform="other"
 
 def clear():
-  if platform=="windows":
-    os.system("cls")
-  else:
-    os.system("clear")
+	if platform=="windows":
+		os.system("cls")
+	else:
+		os.system("clear")
 
 def checkDouble(lst):
-  count={}
-  for item in lst:
-    if item not in count:count[item]=1
-    else:return True
-  return False
+	count={}
+	for item in lst:
+		if item not in count:count[item]=1
+		else:return True
+	return False
 
 clear()
 
@@ -69,94 +71,98 @@ options=webdriver.ChromeOptions()
 options.use_chromium=True
 options.add_experimental_option('excludeSwitches',['enable-logging'])
 if os.path.isfile(r'C:\Program Files\Google\Chrome\Application\chrome.exe'):
-  options.binary_location=r'C:\Program Files\Google\Chrome\Application\chrome.exe'
+	options.binary_location=r'C:\Program Files\Google\Chrome\Application\chrome.exe'
 elif os.path.isfile(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'):
-  options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+	options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 elif sys.platform=="darwin":
-  options.binary_location=r'/Applications/Google Chrome.app'
+	options.binary_location=r'/Applications/Google Chrome.app'
 else:
-  print(color.RED+"Error: This cheat requires chrome to be installed.")
-  time.sleep(10)
-  os._exit(0)
+	print(color.RED+"Error: This cheat requires chrome to be installed.")
+	time.sleep(10)
+	os._exit(0)
 
 if sys.platform=="darwin":
-  driver=webdriver.Chrome(executable_path="C:\\chromedriver.exe")
+	driver=webdriver.Chrome(executable_path="C:\\chromedriver.exe")
 else:
-  driver=webdriver.Chrome(options=options,executable_path=webdriver_location)
+	driver=webdriver.Chrome(options=options,executable_path=webdriver_location)
 questionList=[]
 driver.get('https://www.blooket.com/play')
 time.sleep(1)
 
 try:
-  gamepinenter=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/input')
-  gamepinenter[0].send_keys(gamePin)
-  gamepinjoin=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]')
-  gamepinjoin[0].click()
-  time.sleep(3)
-  nameinenter=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]/input')
-  nameinenter[0].send_keys(gameName)
-  nameinjoin=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]/div')
-  nameinjoin[0].click()
+	gamepinenter=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/input')
+	gamepinenter[0].send_keys(gamePin)
+	gamepinjoin=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]')
+	gamepinjoin[0].click()
+	time.sleep(3)
+	nameinenter=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]/input')
+	nameinenter[0].send_keys(gameName)
+	nameinjoin=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]/div')
+	nameinjoin[0].click()
 except Exception:
-  print(color.RED+"\n\nError: Unknown Error While Joining.\n\n")
-  driver.close()
-  time.sleep(10)
-  exit(10)
+	print(color.RED+"Error: Unknown Error While Joining.")
+	driver.close()
+	time.sleep(10)
+	exit(10)
 
 time.sleep(2)
-input(color.CYAN+"\n\nPress Enter When Ready To Start Cheat\n\n")
+input(color.CYAN+"Press Enter When Ready To Start Cheat")
 for request in driver.requests:
-  if request.response:
-    if "https://api.blooket.com/api/games?gameId=" in request.url:
-      jsondata=request.response.body
-      jsondata=jsondata.decode("utf-8")
-      jsondata=json.loads(jsondata)
+	if request.response:
+		if "https://api.blooket.com/api/games?gameId=" in request.url:
+			jsondata=request.response.body
+			jsondata=jsondata.decode("utf-8")
+			jsondata=json.loads(jsondata)
 
 for question in jsondata['questions']:
-  questionList.append(question["question"])
+	questionList.append(question["question"])
 
+#########################
+#Check if element exists#
+#########################
+def exists(classname:str):
+    try:
+        if driver.find_element_by_css_selector(classname):
+            return True
+    except (Exception,NoSuchElementException):
+        return False
+
+#########################
+#Check for double answer#
+#########################
 if checkDouble(questionList):
-  print(color.RED+"Error: There are multiple questions with the same content, because of the way this cheat works that means it will not be able to answer those questions.\nFor example: The \"Flags of the World\" set, because every question says \"What flag is this?\".")
-  input(color.RED+"Press \'Enter\' to run the cheat anyway.")
-
-clear()
+	print(color.RED+"Error: There are multiple questions with the same content, because of the way this cheat works that means it will not be able to answer those questions.\nFor example: The \"Flags of the World\" set, because every question says \"What flag is this?\".")
+	input(color.RED+"Press \'Enter\' to run the cheat anyway.")
 
 while True:
 
-  if driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/div/div'):
-    try:
-      questionShown=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/div/div')
-      questionShown=questionShown[0].get_attribute("textContent")
-      for question in jsondata['questions']:
-        if str(question["question"])==questionShown:
-          clear()
-          print(color.CYAN+"\n\nANSWER: "+str(question["correctAnswers"][0]))
-    except Exception:
-      clear()
-      print(color.RED+"\n\nError: Unable to detect question content.")
+	#########################
+	# Every Game Hack Cheat #
+	#########################
+	if exists("#qText"):
+		try:
+			questionShown=driver.find_element_by_css_selector('#qText')
+			questionShown=questionShown.get_attribute("textContent")
+			for question in jsondata['questions']:
+				if str(question["question"])==questionShown:
+					print(color.CYAN+"ANSWER DETECTED: "+str(question["correctAnswers"][0]))
+					if exists('#q1'):
+						tmpTag=driver.find_element_by_css_selector('#q1')
+						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
+							driver.execute_script('document.getElementById("q1").innerHTML=document.getElementById("q1").innerHTML+" - Correct"')
+					if exists('#q2'):
+						tmpTag=driver.find_element_by_css_selector('#q2')
+						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
+							driver.execute_script('document.getElementById("q2").innerHTML=document.getElementById("q2").innerHTML+" - Correct"')
+					if exists('#q3'):
+						tmpTag=driver.find_element_by_css_selector('#q3')
+						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
+							driver.execute_script('document.getElementById("q3").innerHTML=document.getElementById("q3").innerHTML+" - Correct"')
+					if exists('#q4'):
+						tmpTag=driver.find_element_by_css_selector('#q4')
+						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
+							driver.execute_script('document.getElementById("q4").innerHTML=document.getElementById("q4").innerHTML+" - Correct"')
+		except Exception:
+			print(color.RED+"An internal error occured...")
 
-  elif driver.find_elements_by_xpath('//*[@id="left"]/div/div[1]/div'):
-    try:
-      questionShown=driver.find_elements_by_xpath('//*[@id="left"]/div/div[1]/div')
-      questionShown=questionShown[0].get_attribute("textContent")
-      for question in jsondata['questions']:
-        if str(question["question"])==questionShown:
-          clear()
-          print(color.CYAN+"\n\nANSWER: "+str(question["correctAnswers"][0]))
-    except Exception:
-      clear()
-      print(color.RED+"\n\nError: Unable to detect question content.")
-
-  elif driver.find_elements_by_xpath('//*[@id="body"]/div[3]/div/div[1]/div'):
-    try:
-      questionShown=driver.find_elements_by_xpath('//*[@id="body"]/div[3]/div/div[1]/div')
-      questionShown=questionShown[0].get_attribute("textContent")
-      for question in jsondata['questions']:
-        if str(question["question"])==questionShown:
-          clear()
-          print(color.CYAN+"\n\nANSWER: "+str(question["correctAnswers"][0]))
-    except Exception:
-      clear()
-      print(color.RED+"\n\nError: Unable to detect question content.")
-
-  time.sleep(0.25)
+	time.sleep(0.2)
