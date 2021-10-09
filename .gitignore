@@ -1,2 +1,13 @@
 
 collectedData/information.txt
+__pycache__/main.cpython-37.pyc
+BlooketHack.spec
+BUILD/*
+*.toc
+*.zip
+*.manifest
+*.pkg
+*.pyz
+buildDist.cmd
+kg_bh.ico
+kg_bh.png

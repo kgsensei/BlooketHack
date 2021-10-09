@@ -38,12 +38,16 @@ class color:
 	END='\033[0m'
 
 platform=None
-if sys.platform=="win32" or sys.platform=="cygwin":platform="windows"
-else:platform="other"
+if sys.platform=="win32" or sys.platform=="cygwin":
+	platform="windows"
+else:
+	platform="other"
 
 def clear():
-	if platform=="windows":os.system("cls")
-	else:os.system("clear")
+	if platform=="windows":
+		os.system("cls")
+	else:
+		os.system("clear")
 
 def checkDouble(lst):
 	count={}
@@ -64,19 +68,23 @@ gameName=input(color.CYAN+"Nickname: ")
 
 webdriver_location="chromedriver.exe"
 options=webdriver.ChromeOptions()
-options.add_argument("--start-maximized")
 options.use_chromium=True
 options.add_experimental_option('excludeSwitches',['enable-logging'])
-if os.path.isfile(r'C:\Program Files\Google\Chrome\Application\chrome.exe'):options.binary_location=r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-elif os.path.isfile(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'):options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
-elif sys.platform=="darwin":options.binary_location=r'/Applications/Google Chrome.app'
+if os.path.isfile(r'C:\Program Files\Google\Chrome\Application\chrome.exe'):
+	options.binary_location=r'C:\Program Files\Google\Chrome\Application\chrome.exe'
+elif os.path.isfile(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'):
+	options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+elif sys.platform=="darwin":
+	options.binary_location=r'/Applications/Google Chrome.app'
 else:
 	print(color.RED+"Error: This cheat requires chrome to be installed.")
 	time.sleep(10)
 	os._exit(0)
 
-if sys.platform=="darwin":driver=webdriver.Chrome(executable_path="C:\\chromedriver.exe")
-else:driver=webdriver.Chrome(options=options,executable_path=webdriver_location)
+if sys.platform=="darwin":
+	driver=webdriver.Chrome(executable_path="C:\\chromedriver.exe")
+else:
+	driver=webdriver.Chrome(options=options,executable_path=webdriver_location)
 questionList=[]
 driver.get('https://www.blooket.com/play')
 time.sleep(1)
@@ -97,27 +105,40 @@ except Exception:
 	time.sleep(10)
 	exit(10)
 
+time.sleep(2)
 print(color.CYAN+"Cheat will start soon...")
-#https://api.blooket.com/api/games?gameId=609d3aebe76402001b2c0ab9
-request=driver.wait_for_request('://api.blooket.com/api/games?gameId=',timeout=600)
-jsondata=request.response.body
-jsondata=jsondata.decode("utf-8")
-jsondata=json.loads(jsondata)
+request=driver.wait_for_request('api.blooket.com/api/games?gameId=')
+for request in driver.requests:
+	if request.response:
+		if "api.blooket.com/api/games?gameId=" in request.url:
+			jsondata=request.response.body
+			jsondata=jsondata.decode("utf-8")
+			jsondata=json.loads(jsondata)
+
 for question in jsondata['questions']:
 	questionList.append(question["question"])
 
+#########################
+#Check if element exists#
+#########################
 def exists(classname:str):
-	try:
-		if driver.find_element_by_css_selector(classname):
-			return True
-	except(Exception,NoSuchElementException):
-		return False
+    try:
+        if driver.find_element_by_css_selector(classname):
+            return True
+    except (Exception,NoSuchElementException):
+        return False
 
+#########################
+#Check for double answer#
+#########################
 if checkDouble(questionList):
 	print(color.RED+"Error: There are multiple questions with the same content, because of the way this cheat works that means it will not be able to answer those questions.\nFor example: The \"Flags of the World\" set, because every question says \"What flag is this?\".")
 	input(color.RED+"Press \'Enter\' to run the cheat anyway.")
 
 while True:
+	#########################
+	# Every Game Hack Cheat #
+	#########################
 	if exists("#qText"):
 		try:
 			questionShown=driver.find_element_by_css_selector('#qText')
@@ -141,5 +162,7 @@ while True:
 						tmpTag=driver.find_element_by_css_selector('#q4')
 						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
 							driver.execute_script('document.getElementById("q4").innerHTML=document.getElementById("q4").innerHTML+" [Correct]"')
-		except Exception:print(color.RED+"An internal error occured...")
+		except Exception:
+			print(color.RED+"An internal error occured...")
+
 	time.sleep(0.2)
