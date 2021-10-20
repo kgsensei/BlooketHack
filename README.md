@@ -4,9 +4,10 @@
 
 ## Development News:
 
-#### New as of 9.24.21
+#### New as of 10.19.21 [ M.D.Y ]
 
-TheFinalWillow seems to have abandon this project so I [kgsensei] have taken control of it again. I will continue to develop the Blooket Hack until I can find someone who wants to take it over or maintain it. If no one wants to I will do so myself. Thanks for your patience with this project.
+I am aware that some of my users have had issues with the cheat. If you aren't super techy I highly 
+recommend glixzzy's cheat. [Link Here](https://github.com/glixzzy/blooket-hack). I hope I fixed everything in this update but I'm not sure so please report issues to me. I also have started working toward a more user friendly interface.
 
 ## Features:
 
@@ -35,7 +36,6 @@ This Blooket Hack is meant to be the most powerful and useful cheat online, and 
   - If it still doesn't work run these commands in command prompt: (Then run `main.py` again.)
    - `py -m pip install selenium`
    - `py -m pip install selenium-wire`
-   - `py -m pip install colorama`
   - Be sure to update the `chromedriver.exe` file to the version that matches your chrome version.
 
 ## Issues + Bugs:
@@ -53,7 +53,13 @@ If there is an issue not shown here, please feel free to join my [Discord server
 
 ## Patch Notes:
 
-### 9.24.21 Update
+#### 10.19.21 Update
+- Started working on more user friendly interface
+- Chrome will now launch in windowed fullscreen
+- Removed colorama depen.
+- Fixed the json load error?
+
+#### 9.24.21 Update
 - Fixed basically everything broken.
 - Added new chrome-driver file.
 - Compressed all games into one simple script.

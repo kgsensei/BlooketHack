@@ -1,54 +1,33 @@
 # Copyright (c) 2021 kgsensei. All rights reserved.
 try:
-	from colorama import init, Fore, Back, Style
 	from selenium.webdriver.common.keys import Keys
 	from seleniumwire import webdriver
 	from selenium.common.exceptions import NoSuchElementException
-	import time
-	import os
-	import json
-	import sys
+	import time, json, random, sys, os
 except Exception:
 	import os
 	print(("="*32)+"\nInstalling required packages...\n"+("="*32))
 	os.system("py -m pip install --upgrade pip")
 	os.system("py -m pip install selenium")
-	os.system("py -m pip install \"colorama==0.4.3\"")
 	os.system("py -m pip install selenium-wire")
 finally:
-	from colorama import init, Fore, Back, Style
 	from selenium.webdriver.common.keys import Keys
 	from seleniumwire import webdriver
 	from selenium.common.exceptions import NoSuchElementException
-	import time
-	import os
-	import json
-	import sys
+	import time, json, random, sys, os
 
-init(autoreset=True)
-
-class color:
-	PURPLE='\033[95m'
-	CYAN='\033[96m'
-	BLUE='\033[94m'
-	GREEN='\033[92m'
-	YELLOW='\033[93m'
-	RED='\033[91m'
-	BOLD='\033[1m'
-	END='\033[0m'
-
+autoAnswer=False
 platform=None
+jsondata=None
+autoOpen=False
+allowReParse=True
+questionList=[]
+
 if sys.platform=="win32" or sys.platform=="cygwin":
 	platform="windows"
-else:
-	platform="other"
+else:platform="other"
 
-def clear():
-	if platform=="windows":
-		os.system("cls")
-	else:
-		os.system("clear")
-
+# Function to check for double items within list
 def checkDouble(lst):
 	count={}
 	for item in lst:
@@ -56,113 +35,136 @@ def checkDouble(lst):
 		else:return True
 	return False
 
-clear()
-
-print(color.CYAN+"  ____  _             _        _      _   _            _     "+color.PURPLE+"        _____\n \
-"+color.CYAN+"| __ )| | ___   ___ | | _____| |_   | | | | __ _  ___| | __ "+color.PURPLE+" __   _|___ /\n \
-"+color.CYAN+"|  _ \| |/ _ \ / _ \| |/ / _ \ __|  | |_| |/ _` |/ __| |/ / "+color.PURPLE+" \ \ / / |_ \\\n \
-"+color.CYAN+"| |_) | | (_) | (_) |   <  __/ |_   |  _  | (_| | (__|   <  "+color.PURPLE+"  \ V / ___) |\n \
-"+color.CYAN+"|____/|_|\___/ \___/|_|\_\___|\__|  |_| |_|\__,_|\___|_|\_\ "+color.PURPLE+"   \_/ |____/\n\n\n")
-gamePin=input(color.CYAN+"Game Pin: ")
-gameName=input(color.CYAN+"Nickname: ")
-
-webdriver_location="chromedriver.exe"
+# Initialize webdriver variables [make stuff work]
 options=webdriver.ChromeOptions()
 options.use_chromium=True
+options.add_argument("--start-maximized")
+options.add_argument('--disable-extensions')
+options.add_argument("--disable-plugins-discovery")
+options.add_argument('--profile-directory=Default')
 options.add_experimental_option('excludeSwitches',['enable-logging'])
-if os.path.isfile(r'C:\Program Files\Google\Chrome\Application\chrome.exe'):
-	options.binary_location=r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-elif os.path.isfile(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'):
-	options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
-elif sys.platform=="darwin":
-	options.binary_location=r'/Applications/Google Chrome.app'
+
+# Find location that chrome is installed
+if os.path.isfile(r'C:\Program Files\Google\Chrome\Application\chrome.exe'):options.binary_location=r'C:\Program Files\Google\Chrome\Application\chrome.exe'
+elif os.path.isfile(r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'):options.binary_location=r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+elif sys.platform=="darwin":options.binary_location=r'/Applications/Google Chrome.app'
 else:
-	print(color.RED+"Error: This cheat requires chrome to be installed.")
+	print("Error: This cheat requires chrome to be installed.")
 	time.sleep(10)
 	os._exit(0)
 
-if sys.platform=="darwin":
-	driver=webdriver.Chrome(executable_path="C:\\chromedriver.exe")
-else:
-	driver=webdriver.Chrome(options=options,executable_path=webdriver_location)
-questionList=[]
-driver.get('https://www.blooket.com/play')
-time.sleep(1)
+# Set path for different operating systems
+if sys.platform=="darwin":driver=webdriver.Chrome(executable_path="C:\\chromedriver.exe")
+else:driver=webdriver.Chrome(options=options,executable_path="chromedriver.exe")
 
-try:
-	gamepinenter=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/input')
-	gamepinenter[0].send_keys(gamePin)
-	gamepinjoin=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]')
-	gamepinjoin[0].click()
-	time.sleep(3)
-	nameinenter=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]/input')
-	nameinenter[0].send_keys(gameName)
-	nameinjoin=driver.find_elements_by_xpath('//*[@id="app"]/div/div/div[2]/div/form/div[2]/div')
-	nameinjoin[0].click()
-except Exception:
-	print(color.RED+"Error: Unknown Error While Joining.")
-	driver.close()
-	time.sleep(10)
-	exit(10)
+# Show new main menu for cheat
+driver.execute_script("document.getElementsByTagName('body')[0].innerHTML='<div style=\"color:white; \
+	background-color:rgb(25,25,25);width:100%;height:100%;position:absolute;z-index:9999\"><div style= \
+	\"position:absolute;left:10%;top:7%;\"><h1>Blooket Hack v5</h1><h3>By: kgsensei</h3><h6>Copyright (c) \
+	2021 kgsensei</h6><br><br><h2>Enter the game pin to join:</h2><br><input style=\"outline:none \
+	background-color:transparent;border-style:none;width:100%;height:50px;font-size:25px;background-color: \
+	rgb(15,15,15);color:white;\" max=\"6\" maxlength=\"6\" id=\"gamePin\" placeholder=\"Game Pin\"><br><br> \
+	Do Auto Answer: <input type=\"checkbox\" id=\"DoAutoAnswer\"><br><br><h3> \
+	Have fun and be sure to report any issues.</h3></div>'; \
+	document.getElementsByTagName('body')[0].style='padding:0px;margin:0px;font-family:\"Segoe UI\", \
+	Tahoma,Geneva,Verdana,sans-serif;';params=\"\"; \
+	document.addEventListener('keyup',function(e){ \
+		if(e.key==='Enter'||e.keyCode===13){ \
+			if(document.getElementById('DoAutoAnswer').checked){params=params+\"autoAnswer,\"} \
+			fetch(\"https://kgsensei.dev/?params=\"+params).then(data=>{ \
+				window.location.href=\"https://www.blooket.com/play?id=\"+document.getElementById(\"gamePin\").value; \
+			}) \
+		} \
+	}); \
+	document.title=\"Blooket Hack v5\"")
 
-time.sleep(2)
-print(color.CYAN+"Cheat will start soon...")
-request=driver.wait_for_request('api.blooket.com/api/games?gameId=')
-for request in driver.requests:
-	if request.response:
-		if "api.blooket.com/api/games?gameId=" in request.url:
-			jsondata=request.response.body
-			jsondata=jsondata.decode("utf-8")
-			jsondata=json.loads(jsondata)
+# Wait for request to load, when it does log answer information
+while jsondata==None:
+	for request in driver.requests:
+		if request.response:
+			if "api.blooket.com/api/games?gameId=" in request.url:
+				jsondata=request.response.body
+				jsondata=jsondata.decode("utf-8")
+				jsondata=json.loads(jsondata)
+				break
+			if "https://kgsensei.dev/?params=" in request.url and allowReParse==True:
+				x=(request.url).replace("https://kgsensei.dev/?params=","").split(",")
+				if "autoAnswer" in x:
+					autoAnswer=True
+				allowReParse=False
 
+# Append questions and answers to the question list variable
 for question in jsondata['questions']:
 	questionList.append(question["question"])
 
-#########################
-#Check if element exists#
-#########################
+# Check if element exists
 def exists(classname:str):
     try:
-        if driver.find_element_by_css_selector(classname):
-            return True
-    except (Exception,NoSuchElementException):
-        return False
+        if driver.find_element_by_css_selector(classname):return True
+    except(Exception,NoSuchElementException):return False
 
-#########################
-#Check for double answer#
-#########################
+# Check for double answer
 if checkDouble(questionList):
-	print(color.RED+"Error: There are multiple questions with the same content, because of the way this cheat works that means it will not be able to answer those questions.\nFor example: The \"Flags of the World\" set, because every question says \"What flag is this?\".")
-	input(color.RED+"Press \'Enter\' to run the cheat anyway.")
+	print("Error: There are multiple questions with the same content, because of the way this cheat works that means it will not be able to answer those questions.\nFor example: The \"Flags of the World\" set, because every question says \"What flag is this?\".")
+	input("Press \'Enter\' to run the cheat anyway.")
 
 while True:
-	#########################
-	# Every Game Hack Cheat #
-	#########################
-	if exists("#qText"):
-		try:
+
+	# Every Game Correct Answer and Auto Answer Cheat
+	try:
+		if exists("#qText"):
 			questionShown=driver.find_element_by_css_selector('#qText')
 			questionShown=questionShown.get_attribute("textContent")
 			for question in jsondata['questions']:
 				if str(question["question"])==questionShown:
-					print(color.CYAN+"ANSWER DETECTED: "+str(question["correctAnswers"][0]))
+					print("ANSWER DETECTED: "+str(question["correctAnswers"][0]))
 					if exists('#q1'):
 						tmpTag=driver.find_element_by_css_selector('#q1')
 						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
-							driver.execute_script('document.getElementById("q1").innerHTML=document.getElementById("q1").innerHTML+" [Correct]"')
+							if autoAnswer==False:
+								driver.execute_script('document.getElementById("q1").innerHTML=document.getElementById("q1").innerHTML+"_[Correct]"')
+							else:tmpTag.click()
 					if exists('#q2'):
 						tmpTag=driver.find_element_by_css_selector('#q2')
 						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
-							driver.execute_script('document.getElementById("q2").innerHTML=document.getElementById("q2").innerHTML+" [Correct]"')
+							if autoAnswer==False:
+								driver.execute_script('document.getElementById("q2").innerHTML=document.getElementById("q2").innerHTML+"_[Correct]"')
+							else:tmpTag.click()
 					if exists('#q3'):
 						tmpTag=driver.find_element_by_css_selector('#q3')
 						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
-							driver.execute_script('document.getElementById("q3").innerHTML=document.getElementById("q3").innerHTML+" [Correct]"')
+							if autoAnswer==False:
+								driver.execute_script('document.getElementById("q3").innerHTML=document.getElementById("q3").innerHTML+"_[Correct]"')
+							else:tmpTag.click()
 					if exists('#q4'):
 						tmpTag=driver.find_element_by_css_selector('#q4')
 						if str(tmpTag.get_attribute("textContent"))==str(question["correctAnswers"][0]):
-							driver.execute_script('document.getElementById("q4").innerHTML=document.getElementById("q4").innerHTML+" [Correct]"')
-		except Exception:
-			print(color.RED+"An internal error occured...")
+							if autoAnswer==False:
+								driver.execute_script('document.getElementById("q4").innerHTML=document.getElementById("q4").innerHTML+"_[Correct]"')
+							else:tmpTag.click()
+	except Exception as e:
+		print("Error: "+str(e))
 
-	time.sleep(0.2)
+	# This section of code is for a future feature.
+
+	"""
+	# This section is for opening boxes [Gold Only]
+	try:
+		if autoOpen==True and "/play/gold" in driver.current_url():
+			if exists('.styles__choice1___nP-pT-camelCase'):
+				x=random.randint(0,2)
+				if x==0 and exists('.styles__choice1___nP-pT-camelCase'):
+					b=driver.find_element_by_css_selector('.styles__choice1___nP-pT-camelCase')
+					b.click()
+				elif x==1 and exists('.styles__choice2___nP-pT-camelCase'):
+					b=driver.find_element_by_css_selector('.styles__choice2___nP-pT-camelCase').click()
+					b.click()
+				elif x==2 and exists('.styles__choice3___nP-pT-camelCase'):
+					b=driver.find_element_by_css_selector('.styles__choice3___nP-pT-camelCase').click()
+					b.click()
+	except Exception as e:
+		print("Error: "+str(e))
+	"""
+
+	# Delay to prevent from overprocessing
+	time.sleep(0.125)
