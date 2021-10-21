@@ -57,7 +57,8 @@ If there is an issue not shown here, please feel free to join my [Discord server
 - Started working on more user friendly interface
 - Chrome will now launch in windowed fullscreen
 - Removed colorama depen.
-- Fixed the json load error?
+- [ 10.19.21 ] Fixed the json load error?
+- [ 10.20.21 ] Fixed json load error?
 
 #### 9.24.21 Update
 - Fixed basically everything broken.

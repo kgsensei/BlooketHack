@@ -84,7 +84,7 @@ while jsondata==None:
 		if request.response:
 			if "api.blooket.com/api/games?gameId=" in request.url:
 				jsondata=request.response.body
-				jsondata=jsondata.decode("utf-8")
+				jsondata=jsondata.decode("utf-8",errors="ignore")
 				jsondata=json.loads(jsondata)
 				break
 			if "https://kgsensei.dev/?params=" in request.url and allowReParse==True:
