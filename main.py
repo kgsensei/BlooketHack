@@ -3,7 +3,7 @@ try:
 	from selenium.webdriver.common.keys import Keys
 	from seleniumwire import webdriver
 	from selenium.common.exceptions import NoSuchElementException
-	import time, json, random, sys, os
+	import time, json, random, sys, os, gzip
 except Exception:
 	import os
 	print(("="*32)+"\nInstalling required packages...\n"+("="*32))
@@ -14,7 +14,7 @@ finally:
 	from selenium.webdriver.common.keys import Keys
 	from seleniumwire import webdriver
 	from selenium.common.exceptions import NoSuchElementException
-	import time, json, random, sys, os
+	import time, json, random, sys, os, gzip
 
 autoAnswer=False
 platform=None
@@ -83,10 +83,14 @@ while jsondata==None:
 	for request in driver.requests:
 		if request.response:
 			if "api.blooket.com/api/games?gameId=" in request.url:
-				jsondata=request.response.body
-				jsondata=jsondata.decode("utf-8",errors="ignore")
-				jsondata=json.loads(jsondata)
-				break
+				try:
+					jsondata=request.response.body
+					jsondata=jsondata.decode("utf-8",errors="ignore")
+					jsondata=json.loads(jsondata)
+					break
+				except Exception:
+					jsondata=json.loads(gzip.decompress(request.response.body).decode())
+					break
 			if "https://kgsensei.dev/?params=" in request.url and allowReParse==True:
 				x=(request.url).replace("https://kgsensei.dev/?params=","").split(",")
 				if "autoAnswer" in x:

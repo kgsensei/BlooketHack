@@ -4,10 +4,13 @@
 
 ## Development News:
 
-#### New as of 10.19.21 [ M.D.Y ]
+#### New as of 10.21.21 [ M.D.Y ]
 
-I am aware that some of my users have had issues with the cheat. If you aren't super techy I highly 
-recommend glixzzy's cheat. [Link Here](https://github.com/glixzzy/blooket-hack). I hope I fixed everything in this update but I'm not sure so please report issues to me. I also have started working toward a more user friendly interface.
+Hello everyone, a large issue has been going around with my cheat where, for some reason, text started to be encoded randomly for some blooket sets, however, it would be regular for other sets. With some help by Dumnersm I solved that issue. I haven't been able to replicate it on my computer (That's why it took so long to fix) but he had the issue so we worked it out. I think that all of these issues should be solved now. If anything else comes up please make an issue or join my discord server.
+
+I did add a new library that is required for the hack to work now but if you haven't had any issues so far than you shouldn't even with this update. This is because the library I'm using comes with python by default. All you should need to do is run the cheat and have selenium and selenium-wire installed (also chrome).
+
+Thank you for understanding!
 
 ## Features:
 
@@ -33,7 +36,7 @@ This Blooket Hack is meant to be the most powerful and useful cheat online, and 
 - Second you must download the code here on GitHub.
 - Third you need to extract the files from the `.zip` file you downloaded.
 - Finally, just double click the `main.py` file.
-  - If it still doesn't work run these commands in command prompt: (Then run `main.py` again.)
+  - If it still doesn't work run these commands in command prompt: (then run `main.py` again.)
    - `py -m pip install selenium`
    - `py -m pip install selenium-wire`
   - Be sure to update the `chromedriver.exe` file to the version that matches your chrome version.
@@ -52,6 +55,11 @@ If there is an issue not shown here, please feel free to join my [Discord server
   - This could be caused by a system administrator blocking unknown executable files/applications from running, in which case I highly recommend using glixzzy's cheat instead. Though it may require some JS console experience. [Link Here](https://github.com/glixzzy/blooket-hack).
 
 ## Patch Notes:
+
+#### 10.23.21 Update
+- Thanks to Dumnersm for helping with an issue
+- Added GZip library as a dependancy
+- GZip was added to fix an issue while loading json data for some users
 
 #### 10.19.21 Update
 - Started working on more user friendly interface
@@ -75,5 +83,6 @@ If there is an issue not shown here, please feel free to join my [Discord server
 
 - Copycat {Copycat#8110} {https://github.com/Copycat8110}
 - DaAwesomeGuy {DaAwesomeGuy#9831}
+- Dumnersm {Dumnersm#7039}
 
 #### Copyright (c) 2021 kgsensei. All rights reserved.
