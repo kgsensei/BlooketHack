@@ -14,10 +14,9 @@ Thank you for understanding!
 
 ## Features:
 
-This Blooket Hack is meant to be the most powerful and useful cheat online, and it is designed to fulfill that title. It was initially developed for gold quest but has built up availability for every multiplayer mode [Hosted Modes]. It used to give you answers in the console and you would have to look over to get the current answer, however, with the latest update the console has turned into a log and the correct answer will be displayed in the website. No more need for a small Blooket Game.
-
-- ~100% Guarantee Correct Answer
-- 100% Free & Open Source
+- View Correct Answer
+- Auto Click Correct Answer
+- Bypass Name Limit
 - Works on most game modes:
   - Gold Quest (Tested - Working)
   - Tower Defense (Tested - Working)
@@ -27,7 +26,8 @@ This Blooket Hack is meant to be the most powerful and useful cheat online, and 
   - Classic (Tested - Working)
   - Crypto (Tested - Working)
 - User Friendly (Mostly)
-- Undetectable
+- 100% Free & Open Source
+- ~100% Undetectable
 
 ## How to Use:
 
@@ -56,7 +56,11 @@ If there is an issue not shown here, please feel free to join my [Discord server
 
 ## Patch Notes:
 
-#### 10.23.21 Update
+#### 10.23.21 Update 2
+- Released auto-open chests cheat (Gold/Candy Quest)
+- Released name limit bypass (Allows Longer Name)
+
+#### 10.23.21 Update 1
 - Thanks to Dumnersm for helping with an issue
 - Added GZip library as a dependancy
 - GZip was added to fix an issue while loading json data for some users
