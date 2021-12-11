@@ -1,6 +1,4 @@
-
-collectedData/information.txt
-__pycache__/main.cpython-37.pyc
+__pycache__/
 BlooketHack.spec
 BUILD/*
 *.toc
