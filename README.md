@@ -4,13 +4,9 @@
 
 ## Development News:
 
-#### New as of 10.21.21 [ M.D.Y ]
+#### New as of 1.15.22 [ M.D.Y ]
 
-Hello everyone, a large issue has been going around with my cheat where, for some reason, text started to be encoded randomly for some blooket sets, however, it would be regular for other sets. With some help by Dumnersm I solved that issue. I haven't been able to replicate it on my computer (That's why it took so long to fix) but he had the issue so we worked it out. I think that all of these issues should be solved now. If anything else comes up please make an issue or join my discord server.
-
-I did add a new library that is required for the hack to work now but if you haven't had any issues so far than you shouldn't even with this update. This is because the library I'm using comes with python by default. All you should need to do is run the cheat and have selenium and selenium-wire installed (also chrome).
-
-Thank you for understanding!
+This cheat still works but it's a little challenging to set up so unless you want a challenge look for a different hack, sorry.
 
 ## Features:
 
@@ -89,4 +85,4 @@ If there is an issue not shown here, please feel free to join my [Discord server
 - DaAwesomeGuy {DaAwesomeGuy#9831}
 - Dumnersm {Dumnersm#7039}
 
-#### Copyright (c) 2021 kgsensei. All rights reserved.
+#### Copyright &copy; 2022 kgsensei.

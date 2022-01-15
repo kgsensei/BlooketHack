@@ -1,4 +1,4 @@
-# Copyright (c) 2021 kgsensei. All rights reserved.
+# Copyright (c) 2022 kgsensei
 try:
 	from selenium.webdriver.common.keys import Keys
 	from seleniumwire import webdriver
@@ -125,7 +125,7 @@ for question in jsondata['questions']:
 
 # Check for double answer
 if checkDouble(questionList):
-	driver.execute_script("alert('Hey, this is the Blooket Hack.\nI won\'t work right on this set because of the way that I\'m programmed.\nSorry...')")
+	driver.execute_script("alert('Hey, this is the Blooket Hack.\n\nI won\'t work right on this Blooket set because of the way that I\'m programmed.\n\nSorry...')")
 
 while True:
 
@@ -184,4 +184,4 @@ while True:
 		print("Error occurred. [Location: Auto Open Chest][Normal Error, cause: Blooket]")
 
 	# Delay to prevent from overprocessing
-	time.sleep(0.1)
+	time.sleep(0.05)
