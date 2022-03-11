@@ -4,9 +4,9 @@
 
 ## Development News:
 
-#### New as of 1.15.22 [ M.D.Y ]
+#### New as of 3.10.22 [ M.D.Y ]
 
-This cheat still works but it's a little challenging to set up so unless you want a challenge look for a different hack, sorry.
+THIS CHEAT IS NO LONGER MAINTAINED; I WILL NOT FIX ISSUES OR ANSWER QUESTIONS ON IT.
 
 ## Features:
 
