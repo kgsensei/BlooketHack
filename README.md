@@ -2,11 +2,7 @@
 
 #### Original code by: kgsensei
 
-## Development News:
-
-#### New as of 3.10.22 [ M.D.Y ]
-
-THIS CHEAT IS NO LONGER MAINTAINED; I WILL NOT FIX ISSUES OR ANSWER QUESTIONS ON IT.
+### THIS CHEAT IS NO LONGER MAINTAINED; I WILL NOT FIX ISSUES OR ANSWER QUESTIONS ON IT.
 
 ## Features:
 
@@ -49,35 +45,6 @@ If there is an issue not shown here, please feel free to join my [Discord server
   - This is a Colorama issue, I don't think I can help. :(
 - Chrome-driver fails to start.
   - This could be caused by a system administrator blocking unknown executable files/applications from running, in which case I highly recommend using glixzzy's cheat instead. Though it may require some JS console experience. [Link Here](https://github.com/glixzzy/blooket-hack).
-
-## Patch Notes:
-
-#### 10.23.21 Update 2
-- Released auto-open chests cheat (Gold/Candy Quest)
-- Released name limit bypass (Allows Longer Name)
-
-#### 10.23.21 Update 1
-- Thanks to Dumnersm for helping with an issue
-- Added GZip library as a dependancy
-- GZip was added to fix an issue while loading json data for some users
-
-#### 10.19.21 Update
-- Started working on more user friendly interface
-- Chrome will now launch in windowed fullscreen
-- Removed colorama depen.
-- [ 10.19.21 ] Fixed the json load error?
-- [ 10.20.21 ] Fixed json load error?
-
-#### 9.24.21 Update
-- Fixed basically everything broken.
-- Added new chrome-driver file.
-- Compressed all games into one simple script.
-- Removed "otherTools" file, nothing worked.
-- Modified readme.md file to something more current.
-- Commented sections of the Blooket Hack script.
-- Updated indentation on the Blooket Hack script.
-  - Indentations off by three characters for some reason.
-- Removed TheFinalWillow from production.
 
 ## Contributors + Thanks To:
 
