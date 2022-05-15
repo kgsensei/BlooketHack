@@ -35,7 +35,7 @@
 
 ## Issues + Bugs:
 
-If there is an issue not shown here, please feel free to join my [Discord server](http://discord.gg/BdMbFYwjEf) and ask or make a [GitHub issue](https://github.com/kgsensei/BlooketHack/issues).
+If there is an issue not shown here, please feel free to join my [Discord server](https://discord.gg/U5A3QWXZKZ) and ask or make a [GitHub issue](https://github.com/kgsensei/BlooketHack/issues).
 
 #### Known bugs:
 
